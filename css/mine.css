@@ -1,0 +1,160 @@
+:root{
+  /*COLORS*/
+  --main-color: #009ad8;
+  --bg-color: #1e202b;;
+  --heading-color: #333333;
+  --color-gray: #bfc1c8;;
+  --color-gray-2: #262936;
+ 
+  /* transition */
+  --transition: all .5s ease;
+  /*Font family*/
+  --custome-font: 'Source Sans Pro', sans-serif;
+  --normal-font: "Roboto",sans-serif;
+}
+
+body{
+  background: var(--bg-color);
+  font-family:var(--normal-font);
+  color: var(--color-gray);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+h1, h2, h3, h4, h5{
+  font-family: var(--custome-font);
+}
+.main-text {
+  color: #009ad8;
+}
+
+.bg-color{
+  background: var(--bg-color);
+}
+.bg-color-light{
+  background: var(--main-color)
+}
+
+/*NAVBAR SECTION*/
+.navbar{
+  padding: 50px 0;
+}
+.navbar-brand img{
+  margin-right: 10px;
+}
+.navbar-brand h1{
+  font-size: 1.1428571429em;
+  margin-bottom: 5px;
+}
+.navbar-brand small{
+  font-size: 0.7142857143em;
+  color:#bfc1c8;
+}
+.navbar a{
+  transition: var(--transition);   
+  font-size: 1em;
+}
+.navbar-dark .nav-link{
+  padding: 5px 25px !important;
+  border: 2px solid transparent;
+  border-radius: 50rem;
+  margin-left: 10px;
+}
+.navbar-dark .nav-link:hover,.nav-item .active{
+ border-color: var(--main-color) !important;
+ color: var(--main-color) !important;
+}
+
+/*Navbar Mediaquery*/
+@media screen and (max-width: 991px) {
+  .navbar a{
+      padding-top: 1%  !important;
+      padding-bottom: 1%  !important;
+  }
+  .navbar-dark .nav-link{
+      color: #fff !important;
+  }
+  .nav-item{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+  }
+  .nav-item:last-child{
+    border-bottom: none;
+  }
+  
+  .nav-link.active{
+      color: var(--main-color) !important
+  }
+  .in{
+    background-color: var(--color-gray-2);
+    position: absolute;
+    top: 110%;
+    left: 30px;
+    right: 30px;
+    border-radius: 10px;
+  }
+  .navbar-dark .nav-link:hover,.nav-item .active{
+    border-color: transparent !important;
+   }
+}
+
+/*Home Section*/
+
+.banner{
+  background-image: url(../images/banner.png);
+  background-attachment: fixed;
+  background-position:center;
+  background-size: cover;
+  min-height: 350px;
+  padding: 70px 0;
+}
+.form-control{
+  border: none;
+}
+.form-control:focus{
+  background-color: var(--bg-color);
+  box-shadow: none;
+}
+.special-btn{
+  top: 5px;
+  right: 5px;
+}
+.content{
+  margin-top: -150px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.weather-date{
+  background-color: #2d303d;
+}
+.weather-deatails{
+  background-color: #323544;
+  min-height: 100%;
+}
+.medle-date{
+  background-color: #222530;
+  
+}
+.weather-medle{
+  background-color: #262936;
+  min-height :100%;
+}
+
+.dagree span, .mintemp span{
+  position: relative;
+  top: -0.5em;
+}
+
+.dagree-img{
+  width: 90px;
+  height: 90px;
+}
+
+/* footer */
+footer{
+  padding: 50px;
+  background-color:#262936;
+  
+}
